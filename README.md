@@ -1,11 +1,3 @@
-Nice — your repo has **grown up**, so the README must reflect that maturity.
-Below is a **clean, professional, mid-level edited README** that **exactly matches your current file structure** and reads well for **interviews, internships, and GitHub reviewers**.
-
-You can **replace your entire README.md** with this 👇
-
----
-
-```md
 # 🔐 Secure Auth Snippets
 
 A curated collection of **security-focused Java and Python code snippets**
