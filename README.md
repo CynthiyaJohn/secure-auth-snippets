@@ -1,25 +1,41 @@
 # 🔐 Secure Auth Snippets
 
 A curated collection of **security-focused Java and Python code snippets**
-that demonstrate **common authentication vulnerabilities** alongside their
+demonstrating **common authentication vulnerabilities** alongside their
 **secure, industry-aligned alternatives**.
 
-This repository is designed for:
-- 💡 Learning secure coding practices
-- 🎯 Technical interview preparation
-- 🛡️ Building security awareness as a developer
+This repository is intentionally **snippet-based** — each file focuses on
+**one security concept**, making it easy to understand, explain, and discuss
+during **technical interviews**.
 
 ---
 
-## 🎯 What This Repository Demonstrates
+## 🎯 Purpose of This Repository
 
-- Why **plaintext password storage** is dangerous
-- How **secure password hashing and salting** works
-- Differences between **insecure and secure login flows**
-- Risks of **hardcoded credentials**
-- Importance of **environment-based secret management**
-- Basics of **timing attacks** and constant-time comparisons
-- A **defensive coding mindset** expected in real-world systems
+This project is designed for:
+
+- 💡 Learning **secure coding practices**
+- 🎯 **Technical interview preparation**
+- 🛡️ Developing a **security-first mindset** as a software engineer
+
+Rather than building a large framework-based system, this repository focuses on
+**small, explainable, and realistic security scenarios**.
+
+---
+
+## 🧠 Key Security Concepts Covered
+
+- Plaintext password storage vulnerabilities
+- Secure password hashing and salting
+- Password strength and reuse checks
+- Insecure vs secure login implementations
+- Hardcoded credentials vs environment-based secrets
+- Timing attacks and constant-time comparison
+- Username enumeration vulnerabilities
+- Brute-force attempts and account lockout logic
+- Input validation vs sanitization pitfalls
+- Weak randomness vs cryptographically secure randomness
+- Common string comparison mistakes in authentication logic
 
 ---
 
@@ -34,46 +50,64 @@ secure-auth-snippets/
 │   ├── SecureLogin.java
 │   ├── HardcodedCredentials.java
 │   ├── EnvironmentBasedLogin.java
-│   └── TimingAttackExample.java
+│   ├── TimingAttackExample.java
+│   ├── StringComparisonPitfall.java
+│   └── WeakRandomVsSecureRandom.java
 │
 ├── python/
 │   ├── insecure_password_check.py
 │   ├── plain_text_password_storage.py
 │   ├── secure_password_hashing.py
 │   ├── salted_password_hashing.py
-│   └── constant_time_compare.py
+│   ├── constant_time_compare.py
+│   ├── password_strength_check.py
+│   ├── password_reuse_check.py
+│   ├── bruteforce_login_attempt.py
+│   ├── account_lockout.py
+│   ├── username_enumeration.py
+│   └── input_validation_vs_sanitization.py
 │
+├── docs/
+│   └── (authentication-related documentation)
+│
+├── docs.txt
 └── README.md
 
 ````
+
+---
+
 ## ▶️ How to Run the Snippets
 
 ### 🐍 Python
 
-Install the required dependency (for hashing examples):
+Some hashing examples require `bcrypt`:
 
 ```bash
 pip install bcrypt
 ````
 
-Run any Python snippet:
+Run any Python file:
 
 ```bash
 python secure_password_hashing.py
 ```
 
+Each file is **independent** and can be executed directly.
+
 ---
 
 ### ☕ Java
 
-Compile and run a Java example:
+Compile and run any Java example:
 
 ```bash
 javac SecureLogin.java
 java SecureLogin
 ```
 
-> Environment-based examples require setting environment variables before execution.
+> Environment-based examples require setting environment variables
+> before execution.
 
 ---
 
@@ -81,18 +115,28 @@ java SecureLogin
 
 * Passwords should **never** be stored or compared in plaintext
 * Secrets must **not** be hardcoded in source code
-* Use **strong hashing + salting** for credential storage
-* Prefer **constant-time comparisons** for sensitive data
-* Security is about **eliminating entire classes of bugs**, not patching symptoms
+* Always use **strong hashing with salting** for credentials
+* Prevent information leakage through **generic error messages**
+* Use **constant-time comparisons** for sensitive values
+* Security is about **eliminating entire attack classes**, not fixing symptoms
 
 ---
 
 ## ⚠️ Disclaimer
 
 These snippets are **educational demonstrations only**.
-They are intentionally minimal and **not production-ready authentication systems**.
 
-Use them to **understand concepts**, not as drop-in solutions.
+They are intentionally minimal and **not production-ready authentication systems**.
+Their goal is to **teach concepts**, encourage **defensive thinking**, and support
+**interview discussions**, not to be used as drop-in solutions.
+
 ---
-Say it.
+
+## ⭐ Why This Repo Stands Out
+
+* Focuses on **security fundamentals**, not frameworks
+* Easy to explain in interviews
+* Demonstrates **defensive and attacker-aware thinking**
+* Shows practical understanding of **real-world auth mistakes**
+
 ```
