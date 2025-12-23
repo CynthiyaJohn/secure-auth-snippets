@@ -1,0 +1,14 @@
+import java.security.SecureRandom;
+import java.util.Base64;
+
+public class PasswordResetFlowExample {
+
+    public static void main(String[] args) {
+        SecureRandom random = new SecureRandom();
+        byte[] bytes = new byte[24];
+        random.nextBytes(bytes);
+
+        String token = Base64.getUrlEncoder().encodeToString(bytes);
+        System.out.println(token);
+    }
+}
