@@ -1,8 +1,9 @@
 # 🔐 Secure Auth Snippets
 
-![Last Commit](https://img.shields.io/github/last-commit/<CynthiyaJohn>/secure-auth-snippets)
-![Repo Size](https://img.shields.io/github/repo-size/<CynthiyaJohn>/secure-auth-snippets)
-![Languages](https://img.shields.io/github/languages/count/<CynthiyaJohn>/secure-auth-snippets)
+![Last Commit](https://img.shields.io/github/last-commit/CynthiyaJohn/secure-auth-snippets)
+![Repo Size](https://img.shields.io/github/repo-size/CynthiyaJohn/secure-auth-snippets)
+![Languages](https://img.shields.io/github/languages/count/CynthiyaJohn/secure-auth-snippets)
+
 
 A continuously evolving collection of **security-focused Java and Python code snippets**
 demonstrating **common authentication vulnerabilities** alongside their
