@@ -3,3 +3,4 @@ public class InsecureCookieExample {
         System.out.println("Set-Cookie: sessionId=abc123");
     }
 }
+//EXAMPLE DESCRIBES THE INSECURE COOKIE
