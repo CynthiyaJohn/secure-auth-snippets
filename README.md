@@ -1,9 +1,10 @@
 # 🔐 Secure Auth Snippets
 
-![Last Commit](https://img.shields.io/github/last-commit/CynthiyaJohn/secure-auth-snippets)
-![Repo Size](https://img.shields.io/github/repo-size/CynthiyaJohn/secure-auth-snippets)
-![Languages](https://img.shields.io/github/languages/count/CynthiyaJohn/secure-auth-snippets)
-
+![Maintenance](https://img.shields.io/badge/status-actively%20maintained-brightgreen)
+![Security Focus](https://img.shields.io/badge/focus-authentication%20security-critical)
+![Learning Repo](https://img.shields.io/badge/type-learning%20by%20building-blue)
+![Languages](https://img.shields.io/github/languages/top/CynthiyaJohn/secure-auth-snippets)
+![Commits](https://img.shields.io/github/commit-activity/m/CynthiyaJohn/secure-auth-snippets)
 
 A continuously evolving collection of **security-focused Java and Python code snippets**
 demonstrating **common authentication vulnerabilities** alongside their
@@ -37,12 +38,13 @@ in real-world codebases.
 This repository is **actively maintained** and expanded incrementally.
 
 - Currently contains **30+ focused Java and Python snippets**
+- New files added to cover **advanced and edge-case auth scenarios**
 - Each update targets **one authentication or security concept**
 - Changes are made through **small, concept-driven commits**
 - Emphasis is on **clarity, consistency, and defensive thinking**
 
-This approach reflects how security-related repositories evolve
-in real engineering environments.
+This update expands the repository beyond basic auth examples into
+**realistic attacker-aware patterns** commonly discussed in interviews.
 
 ---
 
@@ -58,11 +60,14 @@ in real engineering environments.
 - Brute-force attempts and account lockout logic
 - Input validation vs sanitization pitfalls
 - Weak randomness vs cryptographically secure randomness
-- Session token and OTP generation patterns
-- Common string comparison mistakes in authentication logic
+- Session tokens, OTPs, and reset-token patterns
+- Cookie security flags and CSRF basics
+- Replay attacks and nonce usage
+- Common string comparison mistakes in auth logic
 - Basic audit logging and rate-limiting concepts
 
-Each concept is demonstrated using **minimal, framework-free code**.
+Each concept is demonstrated using **minimal, framework-free code**
+to keep the focus on **core security reasoning**.
 
 ---
 
@@ -71,7 +76,7 @@ Each concept is demonstrated using **minimal, framework-free code**.
 - Each file is **independent** and can be run on its own
 - Java and Python examples are intentionally minimal
 - Code is meant to be **read, executed, and explained**, not copied blindly
-- Ideal for quick revision before interviews or security reviews
+- Ideal for **quick revision**, interview prep, or security walkthroughs
 
 ---
 
@@ -102,9 +107,5 @@ not to be used as drop-in solutions.
 - Focuses on **security fundamentals**, not frameworks
 - Uses **small, explainable examples**
 - Demonstrates **attacker-aware and defensive thinking**
-- Actively maintained and incrementally improved
-```
-
-
-
-
+- Reflects **incremental, real-world learning**
+- Actively maintained with intentional updates
