@@ -4,6 +4,7 @@
 ![Security Focus](https://img.shields.io/badge/focus-authentication%20security-critical)
 ![Learning Repo](https://img.shields.io/badge/type-learning%20by%20building-blue)
 ![Languages](https://img.shields.io/github/languages/top/CynthiyaJohn/secure-auth-snippets)
+![Python](https://img.shields.io/github/languages/top/CynthiyaJohn/secure-auth-snippets?color=blue&label=python)
 ![Commits](https://img.shields.io/github/commit-activity/m/CynthiyaJohn/secure-auth-snippets)
 
 A continuously evolving collection of **security-focused Java and Python code snippets**
