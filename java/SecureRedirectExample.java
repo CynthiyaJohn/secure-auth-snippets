@@ -20,3 +20,5 @@ public class SecureRedirectExample {
         redirect("https://myapp.com/home");
     }
 }
+//security focused
+
